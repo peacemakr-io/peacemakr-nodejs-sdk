@@ -1,0 +1,9 @@
+/.idea
+/lib
+node_modules
+
+# Secrets file
+.env
+
+# OS Artifacts
+.DS_Store
