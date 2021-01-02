@@ -78,18 +78,4 @@ describe('Test PeacemakrClient', function () {
     }
     assert.ok(errorThrown, `An Error should have occurred when no API key has been provided`);
   });
-
-  it(`Test unavailable option in peacemakr-cli`, async () => {
-    let errorThrown = false;
-    try {
-      await peacemakrClient.encryptInDomain(Utils.stringToUint8Array(`Not a Peacemakr ciphertext`), `1`);
-      await peacemakrClient.executeActionAndResolve(
-        Utils.stringToUint8Array(`Not a Peacemakr ciphertext`),
-        `-unknownoption`
-      );
-    } catch (e) {
-      errorThrown = true;
-    }
-    assert.ok(errorThrown, `Expected an error to occur - unknown cli option was called`);
-  });
 });
