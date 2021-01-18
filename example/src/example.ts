@@ -12,7 +12,7 @@ const apiKey: string = typeof process.env.PEACEMAKR_APIKEY !== 'undefined' ? pro
 const peacemakrClient1 = new PeacemakrClient(apiKey);
 
 app.get('/', (req: any, res: { send: (arg0: string) => void }) => {
-  res.send("This is an implementation example of Peacemakr's NodeJS SDK. Available endpoints: '/encrypt?use_domain'");
+  res.send("This is an implementation example of Peacemakr's NodeJS SDK. Available endpoints: '/encrypt?cleartext=cleartext&domain=optional'");
 });
 
 app.get('/encrypt', async (req: any, res: any) => {
