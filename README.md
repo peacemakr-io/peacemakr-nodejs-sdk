@@ -7,6 +7,9 @@
 # Peacemakr JavaScript SDK
 We take security and trust very seriously. If you believe you have found a security issue, please responsibly disclose by [contacting us](mailto:security@peacemakr.io).
 
+## License
+The content of this SDK is open source under [Apache License 2.0](https://github.com/peacemakr-io/peacemakr-go-sdk/blob/master/LICENSE).
+
 ### Getting Started
 This is an initial implementation of NodeJS SDK - v.0.0.1. As such this version relies on the latest version Peacemakr-CLI to 
 be available on your system, please refer to https://github.com/peacemakr-io/peacemakr-cli for installation details.
